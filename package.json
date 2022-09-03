@@ -1,0 +1,19 @@
+{
+  "name": "ifruit-radio",
+  "version": "1.0.0",
+  "releaseDate": "TBA",
+  "description": "A Discord bot to stream radio stations from GTAV & GTAIV",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "registerCommands": "node ./scripts/register-commands.js"
+  },
+  "author": "D3V1L0M3N",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "discord.js": "^14.3.0",
+    "dotenv": "^16.0.2",
+    "time-stamp": "^2.2.0"
+  }
+}
