@@ -97,7 +97,7 @@ async function main() {
 
 
   // we're all good
-  logger.success(`Ready! ` + chalk.bgGreen.white(`Took ${Math.round(process.uptime() * 1000)}ms`));
+  logger.success(`Ready! ${chalk.bgGreen.white(`Took ${Math.round(process.uptime() * 1000)}ms`)}`);
 }
 
 
