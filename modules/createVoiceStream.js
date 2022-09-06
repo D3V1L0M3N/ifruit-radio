@@ -1,7 +1,7 @@
 const { joinVoiceChannel } = require('@discordjs/voice');
 
 
-// connect to voice channel and start streaming
+// connect to voice channel
 module.exports = async (Client, channel) => {
 
   const connection = joinVoiceChannel({
