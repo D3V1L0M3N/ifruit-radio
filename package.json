@@ -11,9 +11,11 @@
   "author": "D3V1L0M3N",
   "license": "ISC",
   "dependencies": {
+    "@discordjs/voice": "^0.11.0",
     "chalk": "^4.1.2",
     "discord.js": "^14.3.0",
     "dotenv": "^16.0.2",
+    "libsodium-wrappers": "^0.7.10",
     "time-stamp": "^2.2.0"
   }
 }
