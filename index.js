@@ -74,7 +74,6 @@ async function main() {
   logger.log('Logging in to Discord..');
   Client.login(process.env.DISCORD_TOKEN).catch(console.error);
   await (() => new Promise((r) => Client.once('ready', () => r())))();
-  logger.log(`Logged in as: ${chalk.white(Client.user.tag)}`);
 
 
   // load services
