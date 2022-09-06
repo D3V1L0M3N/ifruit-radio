@@ -1,7 +1,7 @@
 {
   "name": "ifruit-radio",
-  "version": "1.0.0",
-  "releaseDate": "TBA",
+  "version": "1.2.0",
+  "releaseDate": "6th September, 2020",
   "description": "A Discord bot to stream radio stations from GTAV & GTAIV",
   "main": "index.js",
   "scripts": {
