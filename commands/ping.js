@@ -1,4 +1,4 @@
-const responder = require('../modules/responder');
+const responder = require('../modules/commandResponder');
 
 
 module.exports = {

@@ -3,7 +3,8 @@ const Discord = require('discord.js');
 
 
 // create an embed with options passed in
-function create(Client, interaction, embedOptions) {
+// - returns embed
+function create(embedOptions) {
 
   const embed = new Discord.EmbedBuilder()
     .setColor(config.themeColor)
@@ -23,9 +24,9 @@ function create(Client, interaction, embedOptions) {
 
 // reply to an interaction
 async function reply(Client, interaction, embedOptions) {  
-  interaction.reply({
+  await interaction.reply({
     embeds: [
-      create(Client, interaction, embedOptions)
+      create(embedOptions)
     ]
   });
 }

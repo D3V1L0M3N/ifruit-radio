@@ -9,8 +9,8 @@
 require('dotenv').config();
 
 const config = require('./config');
-const logger = require('./modules/logger')
-const { asyncForEach } = require('./modules/utils');
+const logger = require('./utils/logger')
+const { asyncForEach } = require('./utils/utils');
 const fs = require('fs');
 const chalk = require('chalk');
 const Discord = require('discord.js');
@@ -40,7 +40,11 @@ async function main() {
   // create new Discord bot Client
   const Client = new Discord.Client({
     intents: [
-      Discord.GatewayIntentBits.Guilds
+      Discord.GatewayIntentBits.Guilds,
+
+      // required
+      // see: https://discordjs.guide/voice/voice-connections.html#playing-audio
+      Discord.GatewayIntentBits.GuildVoiceStates
     ]
   });
 
