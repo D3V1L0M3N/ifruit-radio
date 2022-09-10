@@ -88,7 +88,7 @@ async function main() {
       const service = require(`./services/${file}`);
       if (!service.enabled) { return; }
       logger.log(`Starting service: ${chalk.yellow(file)} [${chalk.blueBright(service.name)}]`);
-      await service.start();
+      await service.start(Client);
     } catch(err) {
       logger.error(`An error occured while enabling service: ${file}`);
       console.error(err);
