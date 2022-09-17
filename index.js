@@ -18,8 +18,13 @@ const Discord = require('discord.js');
 
 
 // ERROR HANDLING
-process.on('unhandledRejection', (err) => {
-  logger.error('An unexpected process error occured: unhandledRejection:');
+process.on(`unhandledRejection`, (err) => {
+  logger.error('Uncaught Promise Error: unhandledRejection:');
+  console.error(err);
+});
+
+process.on('uncaughtException', (err) => {
+  logger.error('Uncaught Process Exception: uncaughtException:');
   console.error(err);
 });
 
