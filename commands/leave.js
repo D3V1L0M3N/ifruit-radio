@@ -1,8 +1,6 @@
-// const Discord = require('discord.js')
-// const sendResponse = require('../modules/send-response');
-
 const logger = require('../utils/logger');
 const responder = require('../modules/commandResponder');
+const Discord = require('discord.js');
 const { getVoiceConnection } = require('@discordjs/voice');
 
 
