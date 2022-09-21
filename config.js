@@ -2,6 +2,8 @@ module.exports = {
   // color style of message embeds
   themeColor: '#eb2fde',
 
+  serverInvite: "https://discord.gg/RBrXXSZ",
+
   // define all existing stations
   stations: [
     {
