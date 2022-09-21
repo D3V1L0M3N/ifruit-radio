@@ -47,6 +47,9 @@ async function main() {
     intents: [
       Discord.GatewayIntentBits.Guilds,
 
+      // required to get bot mentions
+      Discord.GatewayIntentBits.GuildMessages,
+
       // required
       // see: https://discordjs.guide/voice/voice-connections.html#playing-audio
       Discord.GatewayIntentBits.GuildVoiceStates
